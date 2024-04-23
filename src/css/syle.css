@@ -448,8 +448,8 @@ header .action .searchBx input {
   width: 100%;
   min-height: 50vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .contact img {
