@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./src/assets/favicon.png"
+      type="image/x-icon"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Web Dm Gamer" />
+    <meta
+      property="og:image"
+      content="http://127.0.0.1:5500/src/img/Contact-gamer.jpg"
+    />
+    <meta
+      property="og:description"
+      content="Os Melhores Gamers estão aqui!!!"
+    />
+    <meta property="og:site_name" content="Web Dm Gamer" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/syle.css" />
+    <link rel="stylesheet" href="./src/css/animate.css" />
+    <link rel="stylesheet" href="./src/css/responsivi.css" />
+    <title>Web DM Gamer</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="#" class="logo">Gammers</a>
+      <ul class="nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#games">Games</a></li>
+        <li><a href="#tournaments">Tournaments</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="action">
+        <div class="searchBx">
+          <a href="#"><i class="bx bx-search"></i></a>
+          <input type="text" placeholder="Search Games" />
+        </div>
+      </div>
+      <div class="toggleMenu" onclick="toggleMenu()"></div>
+    </header>
+
+    <div class="banner animaX" id="home">
+      <div class="bg">
+        <div class="content">
+          <h2>
+            A New Home for <br />
+            Game Lovers
+          </h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam
+            saepe voluptatibus.
+          </p>
+          <br />
+          <a href="#" class="btn">Join Now</a>
+        </div>
+        <img src="./src/img/Assassino.png" alt="" />
+      </div>
+    </div>
+
+    <div class="about animaX" id="about">
+      <div class="contentBx">
+        <h2>About Us</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, optio
+          dolores? Debitis, mollitia laborum libero sint facere nam dolores
+          aperiam deleniti explicabo possimus officiis officia facilis! Ad fuga
+          dolor reprehenderit. <br />
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, optio
+          dolores? Debitis, mollitia laborum libero sint facere nam dolores
+          aperiam deleniti explicabo possimus officiis officia facilis! Ad fuga
+          dolor reprehenderit!
+        </p>
+        <a href="#">Read more</a>
+      </div>
+      <img src="./src/img/controle-gamer.png" alt="" />
+    </div>
+
+    <div class="games animaX" id="games">
+      <h2>Popular Games</h2>
+      <ul>
+        <li class="active list" data-filter="all">All</li>
+        <li class="list" data-filter="pc">Pc games</li>
+        <li class="list" data-filter="mobile">Mobile games</li>
+      </ul>
+      <div class="cardBx">
+        <div class="card" data-item="pc">
+          <img src="./src/img/gta.jpg" alt="" />
+          <div class="content">
+            <h4>Grand Theft Auto</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Preço <br /><span>$10</span></p>
+              <a href="#">Play Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="mobile">
+          <img src="./src/img/call-of-duty-mobile.jpg" alt="" />
+          <div class="content">
+            <h4>Call Of Duty</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Preço <br /><span>$10</span></p>
+              <a href="#">Play Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="mobile">
+          <img src="./src/img/Blood-Strike.jpg" alt="" />
+          <div class="content">
+            <h4>Blood Strike</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Preço <br /><span>$10</span></p>
+              <a href="#">Play Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="mobile">
+          <img src="./src/img/PUBG-Mobile.jpg" alt="" />
+          <div class="content">
+            <h4>Pubg Mobile</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Preço <br /><span>$10</span></p>
+              <a href="#">Play Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="pc">
+          <img src="./src/img/Assassino-Valhalla.jpg" alt="" />
+          <div class="content">
+            <h4>Assassino's Creed Valhalla</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Preço <br /><span>$10</span></p>
+              <a href="#">Play Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="pc">
+          <img src="./src/img/God-of-War.webp" alt="" />
+          <div class="content">
+            <h4>God of War</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Preço <br /><span>$10</span></p>
+              <a href="#">Play Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="mobile">
+          <img src="./src/img/Call-of-Duty-Warzone-Mobile.jpg" alt="" />
+          <div class="content">
+            <h4>Call of Duty Warzone mobile</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Preço <br /><span>$10</span></p>
+              <a href="#">Play Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="pc">
+          <img src="./src/img/Warzone-PC.jpg" alt="" />
+          <div class="content">
+            <h4>Call of Duty Warzone</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Preço <br /><span>$10</span></p>
+              <a href="#">Play Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="pc">
+          <img src="./src/img/Spider.webp" alt="" />
+          <div class="content">
+            <h4>Spider Man</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Preço <br /><span>$10</span></p>
+              <a href="#">Play Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tournaments animaX" id="tournaments">
+      <h2>Live Tournaments</h2>
+      <div class="boxBx">
+        <div class="box">
+          <img src="./src/img/Tournaments-Call-of-duty.webp" alt="" />
+          <div class="content">
+            <h4><span>50</span> Matches in process...</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+              architecto possimus eos qui eligendi quasi error facilis tempora.
+            </p>
+            <div class="btn">
+              <a href="#" class="watch">Watch</a>
+              <a href="#" class="join">Join Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="./src/img/Tournaments-FreeFire.jpg" alt="" />
+          <div class="content">
+            <h4><span>40</span> Matches in process...</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+              architecto possimus eos qui eligendi quasi error facilis tempora.
+            </p>
+            <div class="btn">
+              <a href="#" class="watch">Watch</a>
+              <a href="#" class="join">Join Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="./src/img/Tournaments-dragon-ball.webp" alt="" />
+          <div class="content">
+            <h4><span>60</span> Matches in process...</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+              architecto possimus eos qui eligendi quasi error facilis tempora.
+            </p>
+            <div class="btn">
+              <a href="#" class="watch">Watch</a>
+              <a href="#" class="join">Join Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="./src/img/Tournaments-fortnite.webp" alt="" />
+          <div class="content">
+            <h4><span>35</span> Matches in process...</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+              architecto possimus eos qui eligendi quasi error facilis tempora.
+            </p>
+            <div class="btn">
+              <a href="#" class="watch">Watch</a>
+              <a href="#" class="join">Join Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="./src/img/Tournaments-CS-go.jpg" alt="" />
+          <div class="content">
+            <h4><span>55</span> Matches in process...</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+              architecto possimus eos qui eligendi quasi error facilis tempora.
+            </p>
+            <div class="btn">
+              <a href="#" class="watch">Watch</a>
+              <a href="#" class="join">Join Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="./src/img/Tournaments-Crossfire5.webp" alt="" />
+          <div class="content">
+            <h4><span>55</span> Matches in process...</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+              architecto possimus eos qui eligendi quasi error facilis tempora.
+            </p>
+            <div class="btn">
+              <a href="#" class="watch">Watch</a>
+              <a href="#" class="join">Join Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact animaX" id="contact">
+      <img src="./src/img/Contact-gamer.jpg" alt="" />
+      <div class="form">
+        <h1>Contact Us</h1>
+        <div class="inputBx">
+          <p>Enter Name</p>
+          <input type="text" placeholder="Nome Completo" />
+        </div>
+
+        <div class="inputBx">
+          <p>Enter Email</p>
+          <input type="text" placeholder="Email" />
+        </div>
+
+        <div class="inputBx">
+          <p>Message</p>
+          <textarea placeholder="Digite aqui..."></textarea>
+        </div>
+
+        <div class="inputBx">
+          <input type="submit" name="Submit" />
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="info">
+        <a href="#" class="logo">Gammers</a>
+        <p>
+          <i class="bx bx-copyright"></i> Todos os direito reservados em 2024
+        </p>
+        <ul>
+          <li>
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="bx bxl-github"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>

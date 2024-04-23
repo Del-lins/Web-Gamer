@@ -1,0 +1,194 @@
+@media (max-width: 1280px) {
+  .tournaments .boxBx {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .games .cardBx {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+    padding: 15px 40px;
+  }
+
+  header .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #1b2141;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1000;
+  }
+
+  header .nav.active {
+    display: flex;
+  }
+
+  header .nav li {
+    margin: 20px 0;
+  }
+
+  header .nav li a {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+
+  .toggleMenu {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: url(../assets/menu.png);
+    background-position: center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .toggleMenu.active {
+    background: url(../assets/close.png);
+    background-position: center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+  }
+
+  .banner .bg img {
+    position: absolute;
+  }
+
+  .banner .bg .content {
+    width: 100%;
+    height: 100%;
+    background: rgb(27 33 65 / 50%);
+    padding: 20px;
+    z-index: 1;
+    border-radius: 10px;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about .contentBx {
+    width: 100%;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .contact img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .contact .form {
+    width: 100%;
+    margin: 30px;
+    padding: 10px;
+  }
+
+  .contact .form h1 {
+    text-align: center;
+  }
+
+  footer .info {
+    flex-direction: column;
+  }
+
+  footer .info p {
+    font-size: 1rem;
+    width: 320px;
+  }
+}
+
+@media (max-width: 900px) {
+  .tournaments {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tournaments .boxBx {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .games .cardBx {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .banner .bg .content {
+    display: none;
+  }
+
+  header .action .searchBx {
+    display: none;
+  }
+
+  .tournaments .boxBx {
+    grid-template-columns: auto;
+  }
+
+  .games .cardBx {
+    grid-template-columns: auto;
+  }
+}
+
+@media (max-width: 360px) {
+  header .logo {
+    font-size: 1.5rem;
+    position: relative;
+    margin-right: auto;
+  }
+
+  .banner .bg img {
+    width: 300px;
+  }
+
+  .about .contentBx {
+    width: 300px;
+    height: 65vh;
+    margin: 30px;
+  }
+
+  .about .contentBx p {
+    text-align: justify;
+  }
+
+  .about .contentBx h2 {
+    font-size: 2rem;
+  }
+
+  .games {
+    padding: 0px 20px;
+  }
+
+  .games .cardBx {
+    grid-template-columns: auto;
+  }
+
+  .tournaments h2 {
+    font-size: 1rem;
+  }
+
+  .contact img {
+    width: 280px;
+  }
+
+  .contact .form .inputBx input,
+  .contact .form .inputBx textarea {
+    width: 250px;
+  }
+
+  .contact .form .inputBx textarea {
+    height: 100px;
+  }
+}
