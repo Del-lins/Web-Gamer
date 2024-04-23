@@ -178,8 +178,8 @@ header .action .searchBx input {
 }
 
 .about .contentBx p {
-  max-width: 600px;
-  text-align: justify;
+  width: 500px;
+  text-align: left;
   color: #dbd9d9;
 }
 

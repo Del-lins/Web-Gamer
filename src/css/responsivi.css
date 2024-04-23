@@ -124,7 +124,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 630px) {
   .banner .bg .content {
     display: none;
   }
@@ -133,12 +133,29 @@
     display: none;
   }
 
+  .banner .bg img {
+    width: 300px;
+  }
+
   .tournaments .boxBx {
     grid-template-columns: auto;
   }
 
   .games .cardBx {
     grid-template-columns: auto;
+  }
+
+  .about .contentBx h2 {
+    font-size: 2rem;
+  }
+
+  .about .contentBx p {
+    width: 250px;
+    text-align: justify;
+  }
+
+  .about img {
+    height: 300px;
   }
 }
 
@@ -149,25 +166,14 @@
     margin-right: auto;
   }
 
-  .banner .bg img {
-    width: 300px;
-  }
-
   .about .contentBx {
     width: 300px;
     height: 80vh;
     margin: 30px;
   }
 
-  .about .contentBx p {
-    text-align: justify;
-  }
-
   .about .contentBx h2 {
-    font-size: 2rem;
-  }
-  .about img {
-    height: 300px;
+    font-size: 1rem;
   }
 
   .games {
