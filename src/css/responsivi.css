@@ -166,6 +166,9 @@
   .about .contentBx h2 {
     font-size: 2rem;
   }
+  .about img {
+    height: 300px;
+  }
 
   .games {
     padding: 0px 20px;
